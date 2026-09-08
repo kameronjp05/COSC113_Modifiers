@@ -1,10 +1,10 @@
 public class Student {
 
-    public String Fn;
+    private String Fn;
 
-    public String Ln;
+    private String Ln;
 
-    public int Sid;
+    private int Sid;
 
     private double gpa;
 
@@ -23,7 +23,7 @@ public class Student {
 //    }
 
     Student(String Fn, String Ln, int Sid) {
-        this(Fn,Ln);
+        this(Fn, Ln);
         this.Sid = Sid;
     }
 
@@ -40,6 +40,8 @@ public class Student {
 
     public void setFn(String fn) {
         this.Fn = fn;
+
+        this.setGpa (3.8);
     }
 
     public int getSid() {
